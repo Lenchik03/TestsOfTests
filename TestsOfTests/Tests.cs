@@ -44,7 +44,7 @@ namespace TestsOfTests
         //Для теста необходимо добавить новое тестирование в базу данных с помощью метода CreateTest(), а потом сравнить количество тестирований в списке до и после добавления тестирования(Assert.That(count1, Is.EqualTo(count2))). Если значения не равны, значит тест прошёл успешно.
 
         [Test]
-        public void WasUpdateRobot()
+        public void WasUpdateTest()
         {
             Test test = menu.GetTests().FirstOrDefault(s => s.Id == 2);
             int robotId = 2;
@@ -65,7 +65,7 @@ namespace TestsOfTests
         //Для теста необходимо найти какое-то тестирование из списка и в метод UpdateTest() передать новые данные о тестировании. Метод UpdateTest() обновит информацию о тестировании в базе данных. После необходимо проверить точно ли новые данные совпадают с нынешними(Например, Assert.That(robotId, Is.EqualTo(test.RobotId))).
 
         [Test]
-        public void WasDeleteRobot()
+        public void WasDeleteTest()
         {
             var count1 = menu.GetTests().Count();
             Test test = menu.GetTests().FirstOrDefault(s => s.Id == 2);

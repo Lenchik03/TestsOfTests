@@ -48,10 +48,10 @@ namespace TestsOfTests
             Assert.That(title, Is.EqualTo(robot.Title));
             Assert.That(serialNumber, Is.EqualTo(robot.SerialNumber));
             Assert.That(statusId, Is.EqualTo(robot.StatusId));
-
-            //Тест WasUpdateRobot() проверяет обновляются ли данные робота в базе данных. 
-            //Для теста необходимо найти какого-то робота из списка и в метод Update() передать новые данные о роботе. Метод Update() обновит информацию о роботе в базе данных. После необходимо проверить точно ли новые данные совпадают с нынешними(Например, Assert.That(title, Is.EqualTo(robot.Title))).
         }
+
+        //Тест WasUpdateRobot() проверяет обновляются ли данные робота в базе данных. 
+        //Для теста необходимо найти какого-то робота из списка и в метод Update() передать новые данные о роботе. Метод Update() обновит информацию о роботе в базе данных. После необходимо проверить точно ли новые данные совпадают с нынешними(Например, Assert.That(title, Is.EqualTo(robot.Title))).
 
         [Test]
         public void WasDeleteRobot()
